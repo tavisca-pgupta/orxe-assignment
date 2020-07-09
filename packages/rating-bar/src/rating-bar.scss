@@ -1,0 +1,93 @@
+@import './rating-bar-map.scss';
+
+:host{
+    .rating-bar-linear{
+        position: relative;
+        height: 32px;
+        .track {
+            background-color: $rating-bar-background-color;
+            height: 8px;
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: $rating-bar-linear-track-padding;
+          }
+          .indicator{
+            height: 8px;
+            width: $rating-bar-indicator-percentage;
+            border-radius: 5px;
+            top:0;
+            position: absolute;
+          }
+          .label {
+            width:100%;
+            color: $rating-bar-label-color;
+            font-weight: $rating-bar-font-weight;
+            font-family: $rating-bar-font-family;
+            font-size: $rating-bar-linear-font-size;
+            .text-label{
+                float: left;
+            }
+            .number-label{
+                float: right;
+            }
+          }
+        .excellent-indicator{
+            background-color:$rating-bar-excellent;
+        }
+        .great-indicator{
+            background-color:$rating-bar-great;
+        }
+        .average-indicator{
+            background-color:$rating-bar-average;
+        }
+        .poor-indicator{
+            background-color:$rating-bar-poor;
+        }
+        .bad-indicator{
+            background-color:$rating-bar-bad;
+        }
+    }
+    .rating-bar-donut{
+        position:relative; 
+        width:40px; 
+        height:40px;
+        .track {
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            border: 4px solid $rating-bar-donut-track-stroke-color
+          }     
+          .indicator {
+            fill: none;
+            stroke-linecap: round;
+            position: absolute;
+            top: 0;
+          }
+          .label {
+            position:absolute; 
+            top:50%; 
+            left:50%; 
+            transform: translate(-50%, -50%); 
+            font-size: $rating-bar-donut-font-size;
+            color: $rating-bar-label-color;
+            font-weight: $rating-bar-font-weight;
+            font-family: $rating-bar-font-family;
+          }
+        
+        .excellent-indicator{
+            stroke:$rating-bar-excellent;
+        }
+        .great-indicator{
+            stroke:$rating-bar-great;
+        }
+        .average-indicator{
+            stroke:$rating-bar-average;
+        }
+        .poor-indicator{
+            stroke:$rating-bar-poor;
+        }
+        .bad-indicator{
+            stroke:$rating-bar-bad;
+        }
+    }   
+}

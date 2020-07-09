@@ -1,0 +1,18 @@
+$rating-bar-excellent : var(--primary);
+$rating-bar-great : var(--rating-great);
+$rating-bar-average : var(--warning);
+$rating-bar-poor : var(--rating-poor);
+$rating-bar-bad : var(--error);
+$rating-bar-label-color : var(--primary-text);
+$rating-bar-font-family : var(--global-font-family);
+$rating-bar-font-weight : var(--font-weight-semi-bold);
+$rating-bar-linear-font-size : 1.6rem;
+$rating-bar-donut-font-size : 1.4rem;
+$rating-bar-background-color : var(--separator-01);
+$rating-bar-donut-track-stroke-color : var(--separator-01);
+$rating-bar-donut-margin : var(--spacing-03);
+$rating-bar-linear-track-padding : var(--spacing-03);
+
+$rating-bar-indicator-percentage: var(--indicator-percentage)
+
+
